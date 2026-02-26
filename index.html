@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Benedict Halim - Data Scientist & ML Engineer">
   <title>Benedict Halim | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-  
+
   <div class="app-layout">
-    
+
     <!-- LEFT SIDEBAR: Navigation -->
     <aside class="sidebar-left">
       <div class="sidebar-brand">
@@ -35,7 +39,7 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-      
+
       <header class="hero-section" id="hero">
         <h1 class="hero-title">Benedict Halim</h1>
         <p class="hero-subtitle">Data Scientist • Machine Learning Engineer • Innovator</p>
@@ -53,7 +57,10 @@
         <section id="about" class="content-section">
           <h2>1 About Me</h2>
           <p>
-            I am a Data Science and Machine Learning practitioner passionate about extracting actionable insights from complex datasets and building robust predictive models. With a strong foundation in analytics and a keen eye for detail, I specialize in applying natural language processing (NLP), unstructured data parsing, and predictive analytics to solve real-world problems.
+            I am a Data Science and Machine Learning practitioner passionate about extracting actionable insights from
+            complex datasets and building robust predictive models. With a strong foundation in analytics and a keen eye
+            for detail, I specialize in applying natural language processing (NLP), unstructured data parsing, and
+            predictive analytics to solve real-world problems.
           </p>
         </section>
 
@@ -63,23 +70,27 @@
             <h3 class="card-title">University College London (UCL)</h3>
             <p class="card-subtitle">Focus in Data Science, ML & Marketing Analytics</p>
             <p class="card-text">
-              Coursework includes comprehensive training in algorithmic development, causality, A/B testing, and data wrangling. Experienced in handling large-scale data to formulate business and analytical strategies.
+              Coursework includes comprehensive training in algorithmic development, causality, A/B testing, and data
+              wrangling. Experienced in handling large-scale data to formulate business and analytical strategies.
             </p>
           </div>
         </section>
 
         <section id="projects" class="content-section">
           <h2>3 Portfolio Projects</h2>
-          
+
           <div class="project-grid">
-            
+
             <div class="project-card">
               <div class="project-icon gradient-1">
                 <i data-lucide="leaf"></i>
               </div>
               <h3>ESG Risk Classification Pipeline</h3>
               <p>
-                Engineered a sophisticated NLP pipeline leveraging specialized BERT models (<code>EnvironmentalBERT</code>, <code>climatebert</code>) to classify and extract environmental claims from corporate annual reports. Fine-tuned ensemble regression models (Ridge, Random Forest, ElasticNet) to predict continuous ESG risk scores accurately.
+                Engineered a sophisticated NLP pipeline leveraging specialized BERT models
+                (<code>EnvironmentalBERT</code>, <code>climatebert</code>) to classify and extract environmental claims
+                from corporate annual reports. Fine-tuned ensemble regression models (Ridge, Random Forest, ElasticNet)
+                to predict continuous ESG risk scores accurately.
               </p>
             </div>
 
@@ -89,7 +100,9 @@
               </div>
               <h3>Dating Fraud Detection System</h3>
               <p>
-                Developed an end-to-end machine learning solution (<code>DSA4263_Dating_Fraud</code>) designed to detect and flag fraudulent activities on dating platforms, utilizing behavioral feature engineering and robust classification algorithms.
+                Developed an end-to-end machine learning solution (<code>DSA4263_Dating_Fraud</code>) designed to detect
+                and flag fraudulent activities on dating platforms, utilizing behavioral feature engineering and robust
+                classification algorithms.
               </p>
             </div>
 
@@ -99,7 +112,9 @@
               </div>
               <h3>Automated FTSE 100 Scraper</h3>
               <p>
-                Built a fully automated web scraping infrastructure that systematically searches, validities, and downloads 2024 annual reports (PDFs) of FTSE 100 companies, incorporating dynamic rate-limiting handlers and data validation.
+                Built a fully automated web scraping infrastructure that systematically searches, validities, and
+                downloads 2024 annual reports (PDFs) of FTSE 100 companies, incorporating dynamic rate-limiting handlers
+                and data validation.
               </p>
             </div>
 
@@ -109,7 +124,21 @@
               </div>
               <h3>Sherlock Holmes NLP Parser</h3>
               <p>
-                Developed a Python-based tokenization and text-cleaning engine to process unstructured historical texts. Segmented the complete works of Sherlock Holmes into distinct stories, setting the foundation for advanced language modeling and retrieval tasks.
+                Developed a Python-based tokenization and text-cleaning engine to process unstructured historical texts.
+                Segmented the complete works of Sherlock Holmes into distinct stories, setting the foundation for
+                advanced language modeling and retrieval tasks.
+              </p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-icon gradient-1">
+                <i data-lucide="footprints"></i>
+              </div>
+              <h3>Legwork</h3>
+              <p>
+                Collaborated on a privacy-aware movement tracking repository (<code>RussellDash332/Legwork</code>) built
+                in Python. Engineered features focused on capturing, analyzing, and processing mobility data while
+                adhering to robust data privacy standards.
               </p>
             </div>
 
@@ -189,4 +218,5 @@
     sections.forEach(section => observer.observe(section));
   </script>
 </body>
+
 </html>
