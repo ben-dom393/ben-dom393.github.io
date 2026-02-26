@@ -30,6 +30,12 @@
           <li><a href="#education" class="nav-link"><i data-lucide="graduation-cap"></i> Education</a></li>
           <li><a href="#projects" class="nav-link"><i data-lucide="briefcase"></i> Projects</a></li>
           <li><a href="#skills" class="nav-link"><i data-lucide="code-2"></i> Skills</a></li>
+          <li>
+            <button id="theme-toggle" class="nav-link"
+              style="background: none; border: none; width: 100%; text-align: left; font-family: inherit; font-size: inherit; cursor: pointer; display: flex; align-items: center; gap: 0.75rem; color: var(--text-secondary); padding: 0.75rem 1rem;">
+              <i data-lucide="sun" id="theme-icon"></i> <span id="theme-text">Light Mode</span>
+            </button>
+          </li>
         </ul>
       </nav>
       <div class="sidebar-footer">
@@ -157,6 +163,35 @@
   </div>
 
   <script>
+    // Theme Switcher
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const themeText = document.getElementById('theme-text');
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.body.setAttribute('data-theme', 'light');
+      themeIcon.setAttribute('data-lucide', 'moon');
+      themeText.textContent = 'Dark Mode';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.body.getAttribute('data-theme');
+      if (currentTheme === 'light') {
+        document.body.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        themeIcon.setAttribute('data-lucide', 'sun');
+        themeText.textContent = 'Light Mode';
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        themeIcon.setAttribute('data-lucide', 'moon');
+        themeText.textContent = 'Dark Mode';
+      }
+      lucide.createIcons();
+    });
+
     // Initialize Lucide icons
     lucide.createIcons();
 
